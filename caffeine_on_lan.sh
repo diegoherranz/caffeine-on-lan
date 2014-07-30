@@ -10,4 +10,4 @@ do
   sleep 30
 done
 
-shutdown -h now
+/sbin/shutdown -h now
