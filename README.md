@@ -9,7 +9,7 @@ Scenario
   - A server which has to remain always on.
   - That server can't go back online by itself (for whatever reason) after a power shortage.
   - Run this script on a low-consumption device (did I hear Raspberry Pi?) to bring your server back to life.
-  - The low-consumption device is off all the time except after a shortage when it boots up, wakes the server and turns itself off again.
+  - The low-consumption device is OFF all the time except after a shortage when it boots up, wakes the server and turns itself off again.
 
 Requirements
 ------------
@@ -26,4 +26,6 @@ On the low-consumption device:
   - Add the script to your `root` user crontab:
     - `sudo crontab -e`
     - Add line: `@reboot /path-to-caffeine-on-lan/caffeine_on_lan.sh`
- 
+
+On the server which has to remain ON:
+  - Enable wake-on-lan 
