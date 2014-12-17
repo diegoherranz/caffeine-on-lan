@@ -1,6 +1,6 @@
 #!/bin/sh
 
-target=name #Replace with machine's name
+target=$1
 
 sleep 600 # Don't do anything unless power is stable
 
